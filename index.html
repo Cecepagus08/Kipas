@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>kipas</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="kipas">
+	    <div class="penutup-kipas">
+	      <img src="assets/baling.png" alt="">
+
+	    </div>
+	    <div class="tangkai-kipas">
+	      <div class="tombol">
+	        
+	        <button class="btn1">1</button>
+	        <button class="btn2">2</button>
+	        <button class="btnOff">off</button>
+	      </div>
+	      
+	    </div>
+	    <div class="kaki-kipas">
+	      
+	    </div>
+	  </div>
+	</div>
+	<script>
+	 let img = document.querySelector("img");
+	  document.querySelector(".btn1").addEventListener("click", () =>{
+	    kecepatan1()
+	  })
+	  
+	  document.querySelector(".btn2").addEventListener("click", () =>{
+	    kecepatan2()
+	  })
+	  
+	  
+	  
+	  function kecepatan1(){
+	    if( img.classList == "kecepatan2"){
+	      img.classList.remove("kecepatan2")
+	      img.classList.add("kecepatan1")
+	    }else{
+	      img.classList.add("kecepatan1")
+	      
+	    }
+	  }
+	  function kecepatan2(){
+	    if( img.classList == "kecepatan1"){
+	      img.classList.remove("kecepatan1")
+	      img.classList.add("kecepatan2")
+	    }else{
+	      img.classList.add("kecepatan2")
+	      
+	    }
+	  }
+	  
+	  
+	  
+	  
+	  document.querySelector(".btnOff").addEventListener("click", () =>{
+	    document.querySelector("img").classList.remove("kecepatan2")
+	    document.querySelector("img").classList.remove("kecepatan1")
+	  })
+	</script>
+</body>
+</html>
