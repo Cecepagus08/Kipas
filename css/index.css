@@ -93,6 +93,14 @@
   justify-content: center;
   align-items: center;
   height: 25px;
+  font-weight: 700;
+  font-family: "Sans-Serif", "Sans-Serif";
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+.tombol button:hover{
+  box-shadow: rgba(5,194,239,0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  
 }
 .kaki-kipas{
   height:50px;
